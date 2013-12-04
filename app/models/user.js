@@ -2,10 +2,10 @@ var User = function () {
 
   this.defineProperties({
     name: {type: 'string', required: true},
-    age: {type: 'int'},
+    age: {type: 'int'}
   });
 
-  this.hasMany('Comment');
+  this.hasMany('Comments');
 
   /*
   this.property('login', 'string', {required: true});

@@ -1,5 +1,5 @@
 <div class="hero-unit">
-  <h2 class="id"><%= comment.id %></h2>
+  <h2 class="title"><%= comment.title %></h2>
   <%- linkTo('Edit this comment', editCommentPath(params.id), {class: 'btn pull-right'}); %>
   <%- linkTo('Back to list', commentPath(''), {class: 'btn pull-right'}); %>
 </div>

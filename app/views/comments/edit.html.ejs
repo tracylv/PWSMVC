@@ -12,7 +12,7 @@
       </div>
       <% } %>
 
-      <%- partial('form', {comment: comment}) %>
+        <%- partial('form', {comment: comment, Users: Users}) %>
 
       <div class="form-actions">
         <%- contentTag('input', 'Save', {type: 'submit', class: 'btn btn-primary'}) %>

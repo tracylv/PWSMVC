@@ -1,10 +1,12 @@
 var Comment = function () {
 
   this.defineProperties({
-    
+    title: {type: 'string', required: true},
+    status: {type: 'string'}
   });
 
-  this.belongsTo('User');
+  this.belongsTo("User");
+
   /*
   this.property('login', 'string', {required: true});
   this.property('password', 'string', {required: true});

@@ -13,7 +13,14 @@ var Comments = function () {
   };
 
   this.add = function (req, resp, params) {
-    this.respond({params: params});
+    var self = this;
+    geddy.model.User.all(function(err, data){
+        if(err)
+        {
+            throw  err;
+        }
+        self.respond({params:params, Users: data});
+    })
   };
 
   this.create = function (req, resp, params) {
@@ -60,7 +67,13 @@ var Comments = function () {
         throw new geddy.errors.BadRequestError();
       }
       else {
-        self.respondWith(comment);
+        geddy.model.User.all(function(err, data){
+            if(err)
+            {
+                throw  err;
+            }
+            self.respond({comment: comment, Users: data})
+        })
       }
     });
   };

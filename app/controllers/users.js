@@ -44,7 +44,9 @@ var Users = function () {
         throw new geddy.errors.NotFoundError();
       }
       else {
-        self.respondWith(user);
+        user.getComments(function(err, data){
+            self.respond({user: user, comments: data})
+        });
       }
     });
   };
