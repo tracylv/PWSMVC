@@ -1,8 +1,29 @@
-<%= partial('layout_header'); %>
-  <body>
-    <div class="container">
-      <%- render(); %>
-    </div>
-  </body>
-<%= partial('layout_footer'); %>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Geddy App error page | This app uses Geddy.js</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+
+        <!-- header start  -->
+        <%= partial('layout_header'); %>
+        <!-- header end  -->
+
+        <!-- .container end  -->
+        <div class="container">
+          <%- render(); %>
+        </div>
+        <!-- .container end  -->
+
+        <!-- footer start  -->
+        <%= partial('layout_footer'); %>
+        <!-- footer end  -->
+
+    </body>
+</html>
 
