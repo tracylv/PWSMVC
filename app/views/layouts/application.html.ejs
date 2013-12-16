@@ -8,24 +8,27 @@
         <meta name="viewport" content="width=device-width" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+        <%- styleLink('/css/common.css', {rel:'stylesheet'}) %>
+
+        <!-- for IE6-7 css -->
+        <!--[if lt IE 8]>
+        <%- styleLink('/css/common_ie.css', {rel:'stylesheet'}) %>
+        <![endif]-->
+
         <!-- The HTML5 shim, for IE6-8 support of HTML elements -->
         <!--[if lt IE 9]>
         <%- scriptLink('/js/html5.js', {type:'text/javascript'}) %>
         <![endif]-->
 
         <%- scriptLink('/js/jquery-1.9.1.min.js', {type:'text/javascript'}) %>
-        <%- scriptLink('/js/bootstrap.min.js', {type:'text/javascript'}) %>
+        <%- scriptLink('/js/myplugins.js', {type:'text/javascript'}) %>
         <%- scriptLink('/js/config/init.js', {type: 'text/javascript'}) %>
 
-        <%- styleLink('/css/bootstrap.min.css', {rel:'stylesheet'}) %>
-        <%- styleLink('/css/bootstrap-theme.min.css', {rel:'stylesheet'}) %>
-        <%- styleLink('/css/override.css', {rel:'stylesheet'}) %>
-
         <!-- The fav and touch icons -->
-        <link rel="shortcut icon" href="/images/favicon.ico">
-        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" sizes="72x72" href="/favicon.ico">
+        <link rel="apple-touch-icon" sizes="114x114" href="/favicon.ico">
     </head>
 
     <body>
