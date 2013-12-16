@@ -21,6 +21,7 @@ var Main = function () {
     this.respond({params: params}, {
       format: 'html'
     , template: 'app/views/main/index'
+    , layout: 'app/views/layouts/main'
     });
   };
 };
