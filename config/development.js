@@ -16,7 +16,7 @@
  *
 */
 
-/*var config = {
+var config = {
   detailedErrors: true
 , debug: true
 , hostname: null
@@ -29,8 +29,9 @@
   , key: 'sid'
   , expiry: 14 * 24 * 60 * 60
   }
-};*/
+};
 
+/*
 var config = {
     detailedErrors: false
     , hostname: null
@@ -57,5 +58,5 @@ var config = {
         defaultLocale: 'ja-jp'
     }
 };
-
+ */
 module.exports = config;
